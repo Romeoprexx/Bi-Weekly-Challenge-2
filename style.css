@@ -13,6 +13,11 @@ body {
     line-height: 1.5;
     font-family: inter, sans-serif;
 }
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
 
 .wrapper {
@@ -395,7 +400,7 @@ img {
 .orange-column {
     display: block;
     position: relative;
-    margin-left: 7.2rem;
+    margin-left: 5rem;
 }
 .cardWrite {
     background-color: transparent;
@@ -740,14 +745,39 @@ img {
 .icon{
     display: none;
 }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-gap: 25px;
+    align-items: stretch;
+}
+.text{
+    text-align: center;
+    color: #1b1642!important;
+    font-size: 1.2rem!important;
+    font-weight: 700!important;
+    font-family: epilogue,sans-serif!important;
+}
+.text p{
+    font-size: .75rem;
+    color: #1b1642!important;
+    font-weight: 500!important;
+}
+.text p{
+    font-size: .85rem;
+    font-family: inter, sans-serif;
+    color: #4a4a4a;
+    
+}
 
 @media only screen and (max-width: 600px) {
     .links {background: red; display: none;}
     .logoImg {display: flex; width: 25%; margin-inline-start: 2em;} 
-    .hero-sect{display: flex;} 
+    .hero-sect{display: flex; margin: 0; padding-left: 0;} 
     .heroTxt{display: flex;  width: 400px;} 
     .txt-msg{width: 100%;}
     .imaGe {display: none;}
+    
     .column-5{display: flex; flex-flow: column wrap;}
     .employ {width: 385px;margin-inline-start: 1em; display: block;}
     .employMsg {margin-inline-start: 3em; width: 450px;}
@@ -837,12 +867,34 @@ img {
         display: block;  
     }
    
-    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        
+    }
+    .text{
+        display: grid;
+        font-size: 1rem;
+        resize: none;
+    }
+    .text h3{
+        resize: none;
+        width: 250px;
+        font-size: .9em;
+    }
+    .text p {
+        resize: none;
+        width: 250px;
+        font-size: .6em;
+    }
     
     
    
-    
 }
+
+
 @media only screen 
  and (min-width:768px)
  and (max-width: 1024px){
@@ -963,8 +1015,50 @@ img {
     .courses { margin-left: 3.3em; margin-top: 3em;}
     .discover { margin-left: 3.3em; margin-top: 3em;}
     .about { margin-left: 3.3em; margin-top: 3em;}
+  
+    .text{
+        font-size: 0.5em;
+        display: grid;
+        margin-left: 2em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 0.2fr));
+        grid-gap: 100px;
+        align-items: stretch;
+        margin-left: 3em;
+        width: 500px;
+        margin-right: 1em;
+    }
+    body{
+        background-color:none;
+    }
+    .container{
+        display: grid;
+        justify-content: center;
+     
+    }
+    .hiringImg{
+        display: flex;
+       margin-right: 5em;
+    }
+    .text h3{
+        width: 240px;
+        text-align: center;
+        margin-inline-start: -2em;
+        font-size: .95em;
+    }
+    .text p{
+        margin-inline-start: -3em;
+        font-size: .65em;
+        
+    }
+    
+
     
 }
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .logoImg {
@@ -1064,13 +1158,13 @@ img {
         font-size: 1.6em;
     }
     .eniola{
-        margin-left: 10em;
+        margin-left: 17em;
     }
     .nameE{
-        margin-left: 13.2em;
+        margin-left: 19.5em;
     }
     .workE{
-        margin-left: 22em;
+        margin-left: 32.5em;
     }
  
     .hire{
@@ -1095,14 +1189,47 @@ img {
     .readyToTalk{
         margin-left: 2.5em;
     }
-    .footer{display: flex; height: 65vh; width: 130%;}
-    .courses { display: block;   margin-right: 13em; margin-top: 3em;}
-    .discover { display: block; margin-right: 10em; margin-top: 3em;}
-    .about {display: block; margin-right: 24em; margin-top: 3em;}
+    .footer{display: flex; height: 65vh; justify-content: space-evenly;}
+    .courses { display: block;   margin-right: 5em; margin-top: 3em; font-size: .85em;}
+    .discover { display: block; margin-right: 3em; margin-top: 3em; font-size: .85em;}
+    .about {display: block; margin-right: 4em; margin-top: 3em;font-size: .85em;}
     .footerLogo{
-        margin-left: 20em;
+        margin-left: 1em;
+        font-size: .85em;
     }
-
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 0.2fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        margin-left: 3em;
+        width: 700px;
+        
+    }
+    body{
+        background-color:red;
+    }
+    .container{
+        display: grid;
+        justify-content: center;
+    }
+    .text h3{
+        font-size: .8em;
+        width: 300px;
+        margin-inline-start: -4em;
+    }
+    .text p{
+        font-size: .60em;
+        width: 200px;
+        margin-inline-start: -1em;
+        
+    }
+   
+    .hiringImg{
+        display: flex;
+        justify-content: center;
+        margin-right: 4em;
+    }
     
     
 }
@@ -1154,14 +1281,46 @@ img {
       .readyToTalk{
           margin-left: 3.5em;
       }
-      .courses { display: block;   margin-right: 13em; margin-top: 3em;}
-      .discover { display: block; margin-right: 10em; margin-top: 3em;}
-      .about {display: block; margin-right: 24em; margin-top: 3em;}
+      .courses { display: block;   margin-right: 13em; margin-top: 3em; font-size: .95em;} 
+      .discover { display: block; margin-right: 10em; margin-top: 3em;font-size: .95em;}
+      .about {display: block; margin-right: 25em; margin-top: 3em;font-size: .95em;}
       .footerLogo{
-          margin-left: 20em;
-      }
-      
-  }
+          margin-left: 20.5em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 0.2fr));
+        grid-gap: 40px;
+        align-items: stretch;
+        margin-left: 7em;
+    }
+    .text h3{
+        width: 300px;
+        margin-inline-start: -3em;
+        font-size: 1em;
+    }
+    .text p{
+        width: 250px;
+        font-size: .55em;
+        margin-inline-start: -3em;
+    }
+    .hiringImg{
+        margin-right: 4em;
+    }
+   
+     
+    
+}
   body{
       overflow-x: hidden;
-  }
+    
+
+}
+.hiringImg{
+    display: flex;
+    justify-content: center;
+    margin-inline-start: -2em;
+    
+    
+  
+}
