@@ -1206,9 +1206,7 @@ img {
         width: 700px;
         
     }
-    body{
-        background-color:none;
-    }
+  
     .container{
         display: grid;
         justify-content: center;
