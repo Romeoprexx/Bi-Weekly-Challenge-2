@@ -1207,7 +1207,7 @@ img {
         
     }
     body{
-        background-color:red;
+        background-color:none;
     }
     .container{
         display: grid;
